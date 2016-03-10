@@ -16,33 +16,75 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="styleSheet" href="styles/sprint1.css"> 
 	</head>
+		<a class="button" style="float: left" onClick="goBack()" href="#">Back</a>
+		<a class="button" style="float: left" href="homepage.html">Menu</a>
+		<a class="button" style="float: right" href="#">Sign Out</a>
+	
+
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script></right>
+		<br>
+		<br>
 	<header>
 		<title> This is Heading </title>
-
-	</header>
-	<body>
-		<center>
+	<center>
 			<h1>Cost Categories</h1>
 		</center>
+	
+		<center>
+	</header>
+	<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: arial,serif;
+    color: blue;
+    outline-color: blue;
+}
+.button {
+    background-color:white;
+    font-family: arial,serif;
+    color: blue;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button {
+    background-color:white;
+    font-family: arial,serif;
+    color: blue;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+</style>
+
+</head>
+	<body>
+		
 	</body>
 
 	<body>
-		<p align="left">
-			<button onclick="goBack()">
-				Back
-			</button>
-		</p>
-		<p align="right">
-			<button type="SignOut" value="Sign Out">
-					Sign Out
-			</button>
-			</p>
-		<p align="right">
-			<button type="AddNew" value="Add New">
-				Add New
-				</button>
-		</p>
+		
+		
 
 		<script>
 			function goBack() {
@@ -61,49 +103,59 @@ table, th, td {
 </style>
 </head>
 <body>
+<br>
+<br>
 
 <table style="width:40%">
   <tr>
-    <td>Landscaping</td>
-    <td><button type="update" value="Update">
-					Update</td>		
-    <td><button type="delete" value="Delete">
-					Delete</td>
+    <td><center>Landscaping</center></td>
+    <td><center><button type="update" value="Update">
+					Update</center></td>		
+    <td><center><button type="delete" value="Delete">
+					Delete</center></td>
+  </tr>
+    <tr>
+    <td><center>Roof Repair</center></td>
+    <td><center><button type="update" value="Update">
+					Update</center></td>		
+    <td><center><button type="delete" value="Delete">
+					Delete</center></td>
+  </tr>
+   <tr>
+    <td><center>Plumbing</center></td>
+    <td><center><button type="update" value="Update">
+					Update</center></td>		
+    <td><center><button type="delete" value="Delete">
+					Delete</center></td>
+  </tr>
+   <tr>
+    <td><center>Building Maintenance</center></td>
+    <td><center><button type="update" value="Update">
+					Update</center></td>		
+    <td><center><button type="delete" value="Delete">
+					Delete</center></td>
   </tr>
   <tr>
-    <td>Roof Repair</td>
-    <td><button type="update" value="Update">
-					Update</td>		
-    <td><button type="delete" value="Delete">
-					Delete</td>
-  </tr>
-  <tr>
-    <td>Plumbing</td>
-    <td><button type="update" value="Update">
-					Update</td>		
-    <td><button type="delete" value="Delete">
-					Delete</td>
+    <td><center>Drywall Maintenance</center></td>
+    <td><center><button type="update" value="Update">
+					Update</center></td>		
+    <td><center><button type="delete" value="Delete">
+					Delete</center></td>
   </tr>
 <tr>
-    <td>Outside Building Maintenance</td>
-    <td><button type="update" value="Update">
-					Update</td>		
-    <td><button type="delete" value="Delete">
-					Delete</td>
-  </tr><tr>
-    <td>Drywall Maintenance</td>
-    <td><button type="update" value="Update">
-					Update</td>		
-    <td><button type="delete" value="Delete">
-					Delete</td>
-  </tr><tr>
-    <td>Fireplace Maintenance</td>
-    <td><button type="update" value="Update">
-					Update</td>		
-    <td><button type="delete" value="Delete">
-					Delete</td>
-  </tr>
+  <tr>
+    <td><center>Fireplace Maintenance</center></td>
+    <td><center><button type="update" value="Update">
+					Update</center></td>		
+    <td><center><button type="delete" value="Delete">
+					Delete</center></td>
+ 
 </table>
+<p align="center">
+			<button type="AddNew" value="Add New">
+				Add New
+				</button>
+		</p>
 
 </body>
 </html>
@@ -112,3 +164,4 @@ table, th, td {
 
 	</body>
 </html>
+

@@ -1,0 +1,81 @@
+body {
+background-color: #ffff66;
+
+}
+header h1{
+	clear center
+	font-style: italic;
+	font-family: arial,bold,serif;
+	font-size:230%;
+	color: blue;
+	text-indent:30px;
+	text-align: center;
+	text-shadow:2px 2px 5px black;
+}
+header h2{
+	clear center
+	font-style: italic;
+	font-family: serif;
+	font-size:230%;
+	color: blue;
+	text-indent:30px;
+	text-align: center;
+	text-shadow:2px 2px 5px black;
+	}
+	header h4{
+	clear center
+	font-style: italic;
+	font-family: serif;
+	font-size:230%;
+	color: blue;
+	text-indent:30px;
+	text-align: center;
+	text-shadow:2px 2px 5px black;
+	}
+label{
+	font-family: arial,serif;
+	font-size:100%;
+	color: blue;
+	text-align: left;	
+}
+.button {
+    background-color: blue;
+    outline-color: blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button:hover {
+    background-color: blue;
+    color: white;
+}
+div {
+    background-color: white;
+    font-family: arial, serif;
+    color: blue;
+    width: 400px;
+    padding: 25px;
+    border: 20px solid blue;
+    margin-top:0;
+    margin-right:auto;
+    margin-bottom:0;
+    margin-left:auto;
+    text-align:center;
+    
+}
+
+
+

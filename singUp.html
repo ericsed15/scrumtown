@@ -9,7 +9,6 @@
 
 		<title>HTML</title>
 		<meta name="description" content="">
-		<link rel="styleSheet" href="styles/cssACME">
 		<meta name="author" content="Stela Santana">
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
@@ -17,17 +16,39 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="styleSheet" href="styles/sprint1.css">
 	</head>
 	<header>
 				<title> This is Heading </title>
-				<center><h4>Sign Up</h4></center>
-				
+				<center><h1>Sign Up</h1></center>
 			</header>
-			
+						<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+button {
+    background-color:white;
+    font-family: arial,serif;
+    color: blue;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+</style>
+</head>
+			<body>
+				
+			</body>
 
 	<body>
 		<form action ="action_page.php">		
-<center><label for="firstname">First name:</label>
+<label for="firstname">First name:</label>
 <input type="text" name="firstname" id="firstname" 
        autofocus><br><br>
 <label for="lastname">Last name:</label>
@@ -37,16 +58,15 @@
 <label for="password"> Password </label>
 <input type="password" name="password" placeholder="password" required><br><br>
 <label for="Re-Type password"> Re-Type Password </label>
-<input type="password" name="Re-type password" placeholder="password" required></center>
+<input type="password" name="Re-type password" placeholder="password" required>
 <br><br>
 
-
-<center><input type="submit" name="Enter" id="button" 
-       value="Enter">
-<input type="reset" name="back" id="reset"></center>
+<button type="submitbutton"  > Enter </button>
+<button type="backbutton"  > Back </button>
+ 
 </form>
-
 
 		
 	</body>
 </html>
+

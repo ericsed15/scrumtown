@@ -12,42 +12,78 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="styleSheet" href="styles/sprint1.css">
 		<style>
 			table, th, td {
     			border: 1px solid black;
     			border-collapse: collapse;
 			}
 		</style>
+		<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: arial,serif;
+    color: blue;
+    outline-color: blue;
+}
+.button {
+    background-color:white;
+    font-family: arial,serif;
+    color: blue;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button {
+    background-color:white;
+    font-family: arial,serif;
+    color: blue;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+</style>
 		<script>
 			function goBack() {
 				window.history.back();
 			}
 		</script>
+		
 		<title>Cost Items</title>
 	</head>
 	<body>
 		<div align="center">
 			<h1>Cost Items</h1>
 		</div>
-		<p align="left">
-			<button onclick="goBack()">
-				Back
-			</button>
-		</p>
-		<p align="right">
-			<button type="SignOut" value="Sign Out">
-					Sign Out
-			</button>
-			</p>
-		<p align="right">
-			<button type="AddNew" value="AddNew">
-				Add New
-				</button>
-		</p>
+		<a class="button" style="float: left" onClick="goBack()" href="#">Back</a>
+		<a class="button" style="float: left" href="homepage.html">Menu</a>
+		<a class="button" style="float: right" href="#">Sign Out</a>
+		
 		<div align="center">
-<table style="width:40%">
+<table style="width:80%">
+  <tr>
+    <td>Item #</td>
+    <td>Description</td>
+    <td>Cost Category</td>
+    <td>Project</td>
+    <td>Update?</td>
+    <td>Delete?</td>
   <tr>
     <td>Item 1</td>
+    <td>Scraping Mechanism</td>
+    <td>Tool</td>
+    <td>Home Improvement</td>
     <td><button type="update" value="Update">
 					Update</td>		
     <td><button type="delete" value="Delete">
@@ -55,6 +91,9 @@
   </tr>
   <tr>
     <td>Item 2</td>
+    <td>Scale</td>
+    <td>Tool</td>
+    <td>Home Improvement</td>
     <td><button type="update" value="Update">
 					Update</td>		
     <td><button type="delete" value="Delete">
@@ -62,6 +101,9 @@
   </tr>
   <tr>
     <td>Item 3</td>
+    <td>Hammer</td>
+    <td>Tool</td>
+    <td>Home Improvement</td>
     <td><button type="update" value="Update">
 					Update</td>		
     <td><button type="delete" value="Delete">
@@ -69,24 +111,22 @@
   </tr>
 <tr>
     <td>Item 4</td>
-    <td><button type="update" value="Update">
-					Update</td>		
-    <td><button type="delete" value="Delete">
-					Delete</td>
-  </tr><tr>
-    <td>Item 5</td>
-    <td><button type="update" value="Update">
-					Update</td>		
-    <td><button type="delete" value="Delete">
-					Delete</td>
-  </tr><tr>
-    <td>Item 6</td>
+    <td>Nails</td>
+    <td>Accessory</td>
+    <td>Home Improvement</td>
     <td><button type="update" value="Update">
 					Update</td>		
     <td><button type="delete" value="Delete">
 					Delete</td>
   </tr>
 </table>
+
 </div>
+<p align="right">
+			<button type="AddNew" value="AddNew">
+				Add New
+				</button>
+		</p>
 </body>
 </html>
+
