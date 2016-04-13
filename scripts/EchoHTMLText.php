@@ -24,7 +24,7 @@ class EchoHTMLText {
 	}//echo head
 
 	public static function echoHeader($titleText, $currentLink) {
-		if ($currentLink != "Home" && $currentLink != "Account") {
+		if ($currentLink != "Home" && $currentLink != "Account" && $currentLink != "Projects" && $currentLink != "Cost Categories") {
 			echo 'ERROR in parameters to echoHeader in class EchoHTMlText';
 			echo '<header> <h1>';
 			die();
@@ -41,11 +41,24 @@ class EchoHTMLText {
 						    <ul id="account_sub_menu">
                             <li><a href="/ACME/scripts/loginForm.php">Login</a></li>
                             <li><a href="/ACME/scripts/registerForm.php">Register</a></li>
-                            <li><a href="/ACME/scripts/updateAccountForm.php">Manage</a></li>
+                            <li><a href="/ACME/scripts/updateAccountFormEmployee.php">Manage</a></li>
                             </ul>
 					</li>
 					<li>
-						<a  href="mailto:akhilesh-bajaj@utulsa.edu">Email Us</a>
+						<a  href="#">Projects</a>
+						    <ul id="account_sub_menu2">
+                            <li><a href="/scrumtown-master/Projects.html">Projects List</a></li>
+                            <li><a href="/scrumtown-master/projectreport.html">Project Report</a></li>
+                            </ul>
+					</li>
+					<li>
+						<a  href="#">Cost Categories</a>
+						    <ul id="account_sub_menu3">
+                            <li><a href="/scrumtown-master/costcategories.html">Cost Categories List</a></li>
+                            <li><a href="/scrumtown-master/invoice.html">Cost Invoices</a></li>
+                            <li><a href="/scrumtown-master/cost_item.html">Cost Items</a></li>
+                            <li><a href="/scrumtown-master/costcategoryreport.html">Cost Category Report</a></li>
+                            </ul>
 					</li>
 					<li>
 						<a  href="/ACME/scripts/logout.php">Logout</a>
@@ -63,11 +76,24 @@ class EchoHTMLText {
 						    <ul id="account_sub_menu">
                             <li><a href="/ACME/scripts/loginForm.php">Login</a></li>
                             <li><a href="/ACME/scripts/registerForm.php">Register</a></li>
-                            <li><a href="/ACME/scripts/updateAccountForm.php">Manage</a></li>
+                            <li><a href="/ACME/scripts/updateAccountFormEmployee.php">Manage</a></li>
                             </ul>
 					</li>
 					<li>
-						<a  href="mailto:akhilesh-bajaj@utulsa.edu">Email Us</a>
+						<a  href="#">Project Information</a>
+						    <ul id="account_sub_menu2">
+                            <li><a href="/ACME/Projects.html">Projects</a></li>
+                            <li><a href="/ACME/projectreport.html">Project Report</a></li>
+                            </ul>
+					</li>
+					<li>
+						<a  href="#">Cost Category Information</a>
+						    <ul id="account_sub_menu3">
+                            <li><a href="/ACME/costcategories.html">Cost Categories</a></li>
+                            <li><a href="/ACME/invoice.html">Cost Invoices</a></li>
+                            <li><a href="/ACME/cost_item.html">Cost Items</a></li>
+                            <li><a href="/ACME/costcategoryreport.html">Cost Category Report</a></li>
+                            </ul>
 					</li>
 					<li>
 						<a  href="/ACME/scripts/logout.php">Logout</a>

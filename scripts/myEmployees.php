@@ -51,7 +51,7 @@ class myEmployees {
 		$selectStmt= "SELECT * FROM my_employees AS E WHERE E.email = '$email' ";
 		try {$resultSet = $this -> db -> query($selectStmt);
 		    if ($resultSet -> rowCount() > 0) {		    		
-		    	$EmpInfo = $resultSet->fetch();//fetch customer info into an array
+		    	$empInfo = $resultSet->fetch();//fetch customer info into an array
 				return $empInfo;
 		    }//if customer found			
 			 throw new Exception("Your Information was not found. Please log in first. Or you can always contact us. ", 1);

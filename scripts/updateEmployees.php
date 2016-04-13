@@ -11,16 +11,16 @@ $password = $_POST['password'];
 $address = $_POST['address'];
 
 // error check here
-if (empty($email) ||  empty($first_name)) {
+if (empty($email) || empty($first_name)) {
 	include ('ErrorDisplay.php');
 	ErrorDisplay::echoError("Data received from form is not correct");
 	exit();
 }
 
 // If valid, add the customer
-require_once('my-employees.php');
+require_once('myEmployees.php');
 $mc = new my_employees();
-if(!$mc->updateEmployees($email, $first_name,$state,$zip,$phone,$membership_type,$starting_date) ){
+if(!$mc->updateEmployee($email, $first_name, $last_name, $address) ){
 	die();
 }
 
@@ -41,7 +41,7 @@ EchoHTMLText::echoHeader("Thank you for Updating your Information! ", "Home");
 				First Name: <?php echo $first_name;?><br />
 				Last Name: <?php echo $last_name;?><br />
 				Password: <?php echo $password;?><br />
-				Address: <?php echo $adress;?><br />
+				Address: <?php echo $address;?><br />
 				<br>
 			</fieldset>
 		</section>

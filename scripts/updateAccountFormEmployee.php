@@ -4,7 +4,7 @@ session_start();
 $email = "";
 if (isset($_SESSION['email'])) $email = $_SESSION['email'];//get session email
 require_once('myEmployees.php');
-$mc = new MyEmployees();
+$mc = new myEmployees();
 $empInfo= $mc->retrieveAEmployee($email);
 if(!($empInfo)) die();
 echo '<!DOCTYPE html> <html lang="en">  ';
@@ -37,7 +37,7 @@ echo ' <body>
 	';
 EchoHTMLText::echoHeader("Manage Your Account ", "Account");		
 echo '		<section id="main_form">
-			<form action="update.php" method="post"
+			<form action="updateEmployees.php" method="post"
 			name="update_form" id="update_form" >
 				<fieldset>
 					<legend>
@@ -71,7 +71,7 @@ echo '		<section id="main_form">
 					<br>
 				</fieldset>
 				</form>
-				<form action="updatePassword.php" method="post"
+				<form action="updatePasswordEmployee.php" method="post"
 			     name="update_password_form" id="update_password_form" onsubmit="return validateForm();" >
 			     <fieldset id="passwordUpdate">
 					<legend>
